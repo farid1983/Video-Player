@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Vidoe JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+        var vol = 1;
+
+        function playVid() {
+            document.getElementById('vid').play();
+        }
+        function pauseVid() {
+            document.getElementById('vid').pause();
+        }
+
+        function updateVol(volData) {
+            vol += volData;
+            document.getElementById('vid').volume = vol;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <video id="vid" src="mov_bbb.mp4" width="600px" controls></video>
+        <br />
+        <button class="btn" onClick="playVid()">Play</button>
+        <button class="btn" onClick="pauseVid()">Pause</button>
+        <button class="btn" onClick="updateVol(-0.1)">---</button>
+        <button class="btn" onClick="updateVol(+0.1)">+++</button>
+
+</body>
+</div>
+
+</html>

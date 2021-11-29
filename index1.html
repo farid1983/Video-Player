@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <title>JS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // this is a note
+        //data type
+        //1. string = "abc 123"
+        //2. number/ int = 123, -76
+        //3. boolean = true/ false, 1/0
+        //4. undeifined = data type
+
+        //variable = var, always has a neme and data
+        // var apple = 10;
+        // var banana = 32;
+
+        // var name = 'jam';
+        // var gender = 'male';
+
+        // var totalFruit = apple + banana; //10 + 32 = 42;
+        // console.log(apple);
+        // console.log(totalFruit);
+
+        // console.log(name);
+        // console.log(gender);
+
+        // console.log(apple + banana + 50)
+
+        // console.log('Total apple is:', apple);
+        // console.log(11 + '42');
+        // console.log(apple + name);
+
+        // console.log('Total apple is:', apple, 'Total banana is:', banana);
+
+        // var apple = 10;
+        // apple = "IPhone";
+
+        // console.log(apple);
+
+        // console.log(typeof apple);
+
+        // console.log(typeof aple);
+
+        // var apple = 10; orange = 11; name = "jam";
+        // console.log(name)
+
+        // var apple = 10, orange = 11, name = "jam";
+        // console.log(name)
+
+        // //note functuin name(), eat(), jump()
+
+
+        // eat(); //execute eat function
+        // function eat() {
+        //     console.log("Im eating");
+        //     var roti = 'kosong'
+        //     var drink = 'ice kosong'
+        //     console.log(roti, drink)
+        // }
+
+        // function sleep() {
+        //     console.log('resting')
+        // }
+
+        // //parameters // pass data into our function
+
+        // jump(100);
+        // jump(400, 'tokyo')
+        // function jump(height, country) {
+        //     console.log("the height is:", height, 'country', country);
+        // }
+
+        var count = 0;
+
+        function increase() {
+            count += 1;
+            document.getElementById('num').innerHTML = count;
+            console.log('Count:', count);
+            // count+=1; (shortcut of count+1)
+            // count ++;
+        }
+
+        function decrease() {
+            count -= 1;
+            document.getElementById('num').innerHTML = count;
+            console.log('Count :', count)
+        }
+
+
+        function changeBg(bgColor) {
+            document.getElementById("container").style.backgroundColor = bgColor;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1 id='num'>0</h1>
+        <button class="btn" onclick="decrease()">-</button>
+        <button class="btn" onClick="increase()">+</button>
+
+        <br />
+        <br />
+        <br />
+
+        <button onclick="changeBg('blue')">Blue</button>
+        <button onclick="changeBg('yellow')">Yellow</button>
+        <button onclick="changeBg('Red')">Red</button>
+    </div>
+</body>
+
+
+</html>

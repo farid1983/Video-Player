@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body,html{
+    /* background-color: yellow; */
+
+}
+
+div#container{
+    background-color:blue;
+    width: 1000px;
+    height: 600px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    text-align:right;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#numText {
+    font-size: 60px;
+
+}
+
+header{
+    text-align: center;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+}
+
+div#main_video_player{
+    background-color: green;
+}
+
+aside{
+    background-color: yellow;
+    width: 280px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+ 
+}
+li video{
+    width:200px;
+    margin:20px;
+}
