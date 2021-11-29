@@ -13,7 +13,7 @@ div#container{
     /* background-color:blue; */
     width: 1000px;
     height: 800px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 0 auto;
     /* text-align:right; */
     /* display: flex;
@@ -23,7 +23,6 @@ div#container{
 
 #numText {
     font-size: 60px;
-
 }
 
 header{
@@ -31,7 +30,9 @@ header{
     width: inherit;
     height: auto;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    border-radius:20px ;
+    margin-bottom: 20px;
 
 }
 
@@ -44,10 +45,11 @@ header{
 section {
     width: inherit;
     height: 600px;
-    /* background-color: black; */
+    background-color: lightblue;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 50px 0;
     box-sizing: border-box;
@@ -60,6 +62,19 @@ section {
  li{
      margin:20px;
      list-style-type: none;
+ }
+
+ div#video{
+     text-align: center;
+     background-color: red;
+     border: maroon;
+     padding: 50px;
+     border-radius: 20px;
+ }
+
+ div#morevid{
+     background-color: red;
+     border-radius: 10px;
  }
 
 
