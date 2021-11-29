@@ -5,6 +5,7 @@
 <head>
     <title>Video JavaScript</title>
     <link rel="stylesheet" href="styles_video_player.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
 
     <script>
         var vol = 1;
@@ -31,37 +32,30 @@
 
 <body>
     <div id="container">
+
         <header>My Video Player</header>
 
 
-        <div id="video">
-            <video id="vid" src="mov_bbb.mp4" width="600px" controls></video>
-            <br />
-            <button class="btn" onClick="playVid()">Play</button>
-            <button class="btn" onClick="pauseVid()">Pause</button>
-            <button class="btn" onClick="updateVol(-0.1)">---</button>
-            <button class="btn" onClick="updateVol(+0.1)">+++</button>
+        <section>
+            <div id="video">
+                <video id="vid" src="mov_bbb.mp4" width="600px" controls></video>
+                <br />
+                <button class="btn" onClick="playVid()"><i class="fa fa-play"></i></button>
+                <button class="btn" onClick="pauseVid()"><i class="fa fa-pause"></i></button>
+                <button class="btn" onClick="updateVol(-0.1)"><i class="fa fa-volume-up"></i></button>
+                <button class="btn" onClick="updateVol(+0.1)"><i class="fa fa-volume-down"></i></button>
+            </div>
 
+            <div id="morevid">
+                <ul>
+                    <li onclick="changevid('vid1.mp4')"><video id="vid1" src="vid1.mp4" width="200px"></video></li>
+                    <li onclick="changevid('vid2.mp4')"><video id="vid2" src="vid2.mp4" width="200px"></video></li>
+                    <li onclick="changevid('vid3.mp4')"><video id="vid3" src="vid3.mp4" width="200px"></video></li>
+                    <li onclick="changevid('mov_bbb.mp4')"><video id="vid3" src="mov_bbb.mp4" width="200px"></video>
+                    </li>
+            </div>
 
-        </div>
-
-        <aside>
-            <ul>
-                <li onclick="changevid('vid1.mp4')"><video id="vid1" src="vid1.mp4" width="600px"></video></li>
-                <li onclick="changevid('vid2.mp4')"><video id="vid2" src="vid2.mp4" width="600px"></video></li>
-                <li onclick="changevid('vid3.mp4')"><video id="vid3" src="vid3.mp4" width="600px"></video></li>
-                <li onclick="changevid('mov_bbb.mp4')"><video id="vid3" src="mov_bbb.mp4" width="600px"></video></li>
-        </aside>
-
-
-        <div id="morevid">
-            <!-- 
-            <button class="btn" onClick="changevid('vid1.mp4')">vid1</button>
-            <button class="btn" onClick="changevid('vid1.mp4')">vid2</button>
-            <button class="btn" onClick="changevid('vid1.mp4')">vid3</button> -->
-
-        </div>
-
+        </section>
 </body>
 </div>
 

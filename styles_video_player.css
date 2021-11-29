@@ -10,14 +10,14 @@ body,html{
 }
 
 div#container{
-    background-color:blue;
+    /* background-color:blue; */
     width: 1000px;
-    height: 600px;
-    /* border: 2px solid black; */
+    height: 800px;
+    border: 2px solid black;
     margin: 0 auto;
-    text-align:right;
-    display: flex;
-    flex-direction: column;
+    /* text-align:right; */
+    /* display: flex;
+    flex-direction: row; */
 }
 
 
@@ -27,7 +27,12 @@ div#container{
 }
 
 header{
+    background-color: khaki;
+    width: inherit;
+    height: auto;
     text-align: center;
+    padding: 50px;
+
 }
 
 .btn{
@@ -35,20 +40,27 @@ header{
     height: 40px;
 }
 
-div#main_video_player{
-    background-color: green;
-}
 
-aside{
-    background-color: yellow;
-    width: 280px;
-    height: 580px;
+section {
+    width: inherit;
+    height: 600px;
+    /* background-color: black; */
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;
- 
-}
-li video{
-    width:200px;
-    margin:20px;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+ }
+
+ ul{
+     list-style-type: none;
+ }
+
+ li{
+     margin:20px;
+     list-style-type: none;
+ }
+
+
+
